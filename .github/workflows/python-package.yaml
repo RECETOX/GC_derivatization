@@ -51,6 +51,7 @@ jobs:
       - name: Adjust coverage source path
         run: sed -i "s+$PWD/++g" coverage.xml
       - name: SonarCloud Scan
+        if: env.SONAR_TOKEN != null
         uses: sonarsource/sonarcloud-github-action@master
         with:
           args: >

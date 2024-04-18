@@ -18,7 +18,7 @@ classifiers = [
 ]
 urls = {Homepage = "https://github.com/RECETOX/gc-meox-tms"}
 requires-python = ">=3.8"
-dependencies = ["rdkit-pypi"]
+dependencies = ["rdkit"]
 
 [project.readme]
 file = "README.md"

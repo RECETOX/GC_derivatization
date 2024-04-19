@@ -4,10 +4,10 @@
 
 This package performs in-silico MeOX + TMS derivatization (as described e.g. in https://doi.org/10.1021/acs.analchem.7b01010):
 
-* Methoximation: ketone R(<font color='pink'>C</font>=O)R' and aldehyde (-H<font color='pink'>C</font>=O) karboxyl groups 
+* Methoximation: ketone R(<font color='pink'>C</font>=O)R' and aldehyde (-H<font color='pink'>C</font>=O) carbonyl groups
 are substituted with -<font color='pink'>C</font>=NOCH<sub>3</sub>
 * Trimethylsilylation: the acidic hydrogen in -OH, -SH, -COOH, -NH<sub>2</sub>, -NHR, =NH, the hydrogen is substituted with -Si(CH<sub>3</sub>)<sub>3</sub>
-The substitution needn't happen always, their probability currently hardcoded in the package.
+The substitution doesn't always have to happen; its probability is currently hardcoded in the package.
 Typically, multiple substitution attempts are run on each input molecule, and all distinct results are gathered.
 
 Known limitation is methoximation on cycles which should be broken. This is not implemented yet.

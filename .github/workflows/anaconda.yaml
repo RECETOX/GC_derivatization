@@ -18,7 +18,7 @@ jobs:
           activate-environment: gc-meox-tms-build
           auto-update-conda: true
           environment-file: conda/environment-build.yaml
-          python-version: 3.10
+          python-version: 3.8
       - name: Show conda config
         shell: bash -l {0}
         run: |

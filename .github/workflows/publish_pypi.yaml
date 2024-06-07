@@ -9,9 +9,9 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Set up Python
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v5
       with:
         python-version: '3.8'
     - name: Install dependencies
@@ -20,7 +20,7 @@ jobs:
         pip install build
         python -m build --sdist --wheel
     - name: Publish package
-      uses: pypa/gh-action-pypi-publish@release/v1.5
+      uses: pypa/gh-action-pypi-publish@release/v1.8
       with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
